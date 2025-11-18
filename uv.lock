@@ -221,6 +221,17 @@ wheels = [
 ]
 
 [[package]]
+name = "browser-use-trial"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "browser-use" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "browser-use", specifier = ">=0.9.6" }]
+
+[[package]]
 name = "bubus"
 version = "1.5.6"
 source = { registry = "https://pypi.org/simple" }
@@ -4642,17 +4653,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/5c/19/7472bd526591e2192
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b5/77/8852f89a91453956582a85024d80ad96f30a41fed4c2b3dce0c9f12ecc7e/uuid7-0.1.0-py2.py3-none-any.whl", hash = "sha256:5e259bb63c8cb4aded5927ff41b444a80d0c7124e8a0ced7cf44efa1f5cccf61", size = 7477, upload-time = "2021-12-29T01:38:20.418Z" },
 ]
-
-[[package]]
-name = "uv-bu"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "browser-use" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "browser-use", specifier = ">=0.9.6" }]
 
 [[package]]
 name = "uvicorn"

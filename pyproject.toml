@@ -1,7 +1,7 @@
 [project]
-name = "uv-bu"
+name = "browser-use-trial"
 version = "0.1.0"
-description = "Add your description here"
+description = "A trial project for Browser Use"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
