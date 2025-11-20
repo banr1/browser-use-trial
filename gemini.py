@@ -1,12 +1,13 @@
-from browser_use import Agent, ChatGoogle
+from browser_use import Browser, Agent, ChatGoogle
 import asyncio
 
 from dotenv import load_dotenv
 
 async def example():
-    # browser = Browser(
-    #     # use_cloud=True,  # Uncomment to use a stealth browser on Browser Use Cloud
-    # )
+    browser = Browser(
+        headless=False,  # Show browser window
+        
+    )
     load_dotenv()
 
     llm = ChatGoogle(model='gemini-flash-latest')
@@ -14,7 +15,7 @@ async def example():
     agent = Agent(
         task="Find the number of stars of the tsl-formal-verification GitHub repository",
         llm=llm,
-        # browser=browser,
+        browser=browser,
     )
 
     history = await agent.run()
